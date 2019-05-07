@@ -1,0 +1,54 @@
+body {
+background-color: rgb(25, 22, 29);
+}
+
+h1 {
+color : rgb(249, 248, 250);
+ transition: color 0.5s ease-in-out;
+}
+
+.clicked {
+color: #fd79a8;
+}
+
+.btn {
+color : rgb(249, 248, 250);
+cursor: pointer;    
+}
+
+.form,
+.greeting {
+    color : rgb(249, 248, 250);
+    display: none;
+}
+
+.showing {
+    color : rgb(249, 248, 250);
+    display: block;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+    /*z-index는 여러 어플리케이션 간의 층위 계층을 나타내는 듯 싶은. 모두 앞에 모두 뒤에 이런 식의 레이어*/
+    
+    }
+
+.js-toToList,
+.js-weather{
+    color : rgb(249, 248, 250);
+}
